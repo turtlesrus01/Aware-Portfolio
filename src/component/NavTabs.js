@@ -3,7 +3,7 @@ import React from "react";
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     //navbar container
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-tabs justify-content-end">
       {/* nav item about me */}
       <li className="nav-item">
         {/* nav link */}

@@ -9,6 +9,8 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 //Resume
 import Resume from "./pages/Resume";
+//Footer
+import Footer from "./Footer";
 
 //export container
 export default function Container() {
@@ -42,6 +44,7 @@ export default function Container() {
     <div>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Footer />
     </div>
   );
 }
