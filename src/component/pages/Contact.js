@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { validateEmail } from "../../../../../bootcamp weekly/UTSA-VIRT-FSF-PT-01-2023-U-LOLC/weekly-content/20-React/01-Activities/16-Stu_React-Forms/Solved_/src/utils/helpers";
+import { validateEmail } from "../utils/helpers";
 
 export default function Contact() {
   //state variable setup
