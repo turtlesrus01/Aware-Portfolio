@@ -19,14 +19,19 @@ export default function Container() {
     //renderPage function switch statement
     switch (currentPage) {
       case "About":
+        console.log(currentPage);
         return <About />;
       case "Portfolio":
+        console.log(currentPage);
         return <Portfolio />;
       case "Contact":
+        console.log(currentPage);
         return <Contact />;
       case "Resume":
+        console.log(currentPage);
         return <Resume />;
       default:
+        console.log(currentPage);
         return <About />;
     }
   };
