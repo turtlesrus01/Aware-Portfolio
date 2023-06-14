@@ -55,7 +55,7 @@ export default function Contact() {
     });
     setStatus('Submit');
     //results
-    const result = await response.json;
+    const result = await response.json();
     console.log(result);
 
     //Clear fields after post
@@ -68,13 +68,14 @@ export default function Contact() {
   return (
     <div>
       {/* form */}
-      <form onSubmit={handleFormSubmit}>
+      <form className="form" onSubmit={handleFormSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input 
           value={name} 
           type='text' 
           id="name"
+          onChange={handleInputChange}
           placeholder="name" 
           required />
         </div>
@@ -84,6 +85,7 @@ export default function Contact() {
           value={email} 
           type='email' 
           id="email"
+          onChange={handleInputChange}
           placeholder="email"
           required />
         </div>
@@ -93,10 +95,11 @@ export default function Contact() {
           value={message} 
           type='text' 
           id="message"
+          onChange={handleInputChange}
           placeholder="message" 
           required />
         </div>
-        <button type='submit'>{status}</button>
+        <button type='submit' onClick={handleFormSubmit}>{status}</button>
       </form>
       {errorMessage && (
         <div>
