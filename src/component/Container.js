@@ -43,8 +43,10 @@ export default function Container() {
   return (
     <div>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
-      <Footer />
+      <div className="container aos-init">
+        {renderPage()}
+        <Footer />
+      </div>
     </div>
   );
 }
