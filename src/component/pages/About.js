@@ -9,18 +9,9 @@ export default function About() {
           <h1>About Me</h1>
           <img src={userLogo} alt="Logo" class="img-fluid m-5" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac
-            ipsum in nisl venenatis fermentum. Aenean a posuere augue. Curabitur
-            quis tristique arcu, vel dictum arcu. Curabitur pretium ornare
-            purus, ut ullamcorper nisi. Nullam sit amet elementum sapien. Fusce
-            eu magna et justo pharetra vulputate. Nunc libero nibh, pretium in
-            feugiat at, elementum vel odio. In porta diam a velit gravida
-            iaculis. Phasellus vestibulum nulla vel fringilla laoreet. Quisque
-            et sem leo. Vivamus malesuada libero a lacinia porttitor. Morbi
-            accumsan mollis odio pharetra ultrices. Sed quis mi pellentesque,
-            cursus odio ac, gravida sapien. Phasellus posuere fringilla libero
-            vitae finibus. Ut aliquam gravida magna vel auctor. Pellentesque
-            posuere libero eget sollicitudin ultricies.
+            My name is Stefan Palacios, I am an eager developer that wants to gain experience and knowledge with web development. 
+            I am just about finished working on a codind bootcamp that is helping me build my skills scripting, design, and database knowledge.
+            I feel comfortable most working with Javascript, HTML, and MongoDB for my applications and am always looking to learn about more technologies. 
           </p>
         </div>
       </section>
