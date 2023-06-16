@@ -69,46 +69,51 @@ export default function Contact() {
       <h1>Contact Me</h1>
       <div className="container">
         <div className="row">
-          <div className="col-sm m-5"></div>
-          <div className="col-sm m-5">
+          <div className="col-lg m-5"></div>
+          <div className="col-lg-8 mt-5 mt-lg-0">
             {/* form */}
             <form className="form" onSubmit={handleFormSubmit}>
-              <div>
-                <label htmlFor="name">Name:</label>
+              <div className="col-md-6 form-group">
+                <label htmlFor="name">Name: </label>
                 <input
                   value={name}
                   type="text"
                   id="name"
                   onChange={handleInputChange}
-                  placeholder="name"
+                  placeholder="Your Name"
                   required
+                  className="form-control"
                 />
               </div>
-              <div>
-                <label htmlFor="email">Email:</label>
+              <div className="col-md-6 form-group">
+                <label htmlFor="email">Email: </label>
                 <input
                   value={email}
                   type="email"
                   id="email"
                   onChange={handleInputChange}
-                  placeholder="email"
+                  placeholder="Your Email"
+                  className="form-control"
                   required
                 />
               </div>
-              <div>
-                <label htmlFor="message">Message:</label>
+              <div className="col-md-6 form-group">
+                <label htmlFor="message">Message: </label>
                 <input
                   value={message}
                   type="text"
                   id="message"
                   onChange={handleInputChange}
-                  placeholder="message"
+                  placeholder="Message"
+                  className="form-control"
                   required
                 />
               </div>
-              <button type="submit" onClick={handleFormSubmit}>
-                {status}
-              </button>
+              <div className="text-center">
+                <button type="submit" onClick={handleFormSubmit}>
+                  {status}
+                </button>
+              </div>
             </form>
             {errorMessage && (
               <div>
